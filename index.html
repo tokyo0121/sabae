@@ -1,0 +1,398 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>鯖江市X津田塾 大抽選会</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+		<style>
+			body {
+        background-image: url(images/bg.png);
+        width: 100%;
+				text-align: center;
+				padding: 50px 30px;
+				margin: 0;
+        font-family: 'Gruppo', cursive;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+			}
+      h1{
+        text-size: 90px;
+      }
+			ul {
+				list-style: none;
+			}
+			.slot {
+				width: 90%;
+				height: 600px;
+				overflow: hidden;
+				margin: auto;
+			}
+			.slot-frame {
+				height: 1000px;
+				position: relative;
+				overflow: hidden;
+			}
+			.reels {
+				width: 33%;
+				position: absolute;
+			}
+			.reels:nth-child(1) {
+				left: 0;
+			}
+			.reels:nth-child(2) {
+				left: 33%;
+			}
+			.reels:nth-child(3) {
+				right: 0;
+			}
+			.reel {
+				height: 300px;
+			}
+			.reel img {
+				display: block;
+				width: 89%;
+				margin: auto;
+			}
+      @import "https://use.fontawesome.com/releases/v5.13.0/css/all.css";
+
+      *,
+      *:before,
+      *:after {
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+      }
+
+      button {
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 1;
+      position: relative;
+      display: inline-block;
+      padding: 1rem 4rem;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      color: #212529;
+      border-radius: 0.5rem;
+    }
+
+    button {
+      margin-bottom: 12px;
+      padding: 0;
+
+      -webkit-transition: all 0.3s;
+
+      transition: all 0.3s;
+
+      border-radius: 0;
+    }
+
+    button span {
+      position: relative;
+
+      display: block;
+
+      padding: 1.25rem 3rem;
+
+      color: #000;
+      border: 2px solid #000;
+      border-radius: 0.5rem;
+      background: #fff;
+    }
+
+    button:before {
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+
+      display: block;
+
+      width: 100%;
+      height: 14px;
+
+      content: "";
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+
+      border: 2px solid #000;
+      border-top: 1px solid #000;
+      border-radius: 0 0 0.5rem 0.5rem;
+      background-image: -webkit-repeating-linear-gradient(
+        135deg,
+        #000,
+        #000 1px,
+        transparent 2px,
+        transparent 5px
+      );
+      background-image: repeating-linear-gradient(
+        -45deg,
+        #000,
+        #000 1px,
+        transparent 2px,
+        transparent 5px
+      );
+      background-size: 7px 7px;
+
+      -webkit-backface-visibility: hidden;
+
+      backface-visibility: hidden;
+    }
+
+    button:hover {
+      -webkit-transform: translate(0, 3px);
+      transform: translate(0, 3px);
+    }
+
+    button:hover:before {
+      bottom: -5px;
+    }
+
+    button:active {
+      -webkit-transform: translate(0, 7px);
+      transform: translate(0, 7px);
+    }
+
+    button:active:before {
+      bottom: -1px;
+    }
+
+    .btn-start, .btn-reset{
+      margin-top: 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 0.3;
+    }
+    .btn-stop{
+      margin: 30px 150px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+
+		</style>
+	</head>
+	<body>
+		<h1>大抽選会ルーレット</h1>
+		<div class="slot">
+			<div class="slot-frame">
+				<ul class="reels">
+					<li class="reel"><img src="images/1.png"></li>
+					<li class="reel"><img src="images/0.png"></li>
+					<li class="reel"><img src="images/1.png"></li>
+					<li class="reel"><img src="images/0.png"></li>
+					<li class="reel"><img src="images/1.png"></li>
+					<li class="reel"><img src="images/0.png"></li>
+					<li class="reel"><img src="images/1.png"></li>
+					<li class="reel"><img src="images/0.png"></li>
+          <li class="reel"><img src="images/1.png"></li>
+					<li class="reel"><img src="images/0.png"></li>
+				</ul>
+				<ul class="reels">
+          <li class="reel"><img src="images/1.png"></li>
+					<li class="reel"><img src="images/2.png"></li>
+					<li class="reel"><img src="images/3.png"></li>
+					<li class="reel"><img src="images/4.png"></li>
+					<li class="reel"><img src="images/5.png"></li>
+          <li class="reel"><img src="images/1.png"></li>
+					<li class="reel"><img src="images/2.png"></li>
+					<li class="reel"><img src="images/3.png"></li>
+					<li class="reel"><img src="images/4.png"></li>
+					<li class="reel"><img src="images/5.png"></li>
+				</ul>
+				<ul class="reels">
+          <li class="reel"><img src="images/1.png"></li>
+					<li class="reel"><img src="images/2.png"></li>
+					<li class="reel"><img src="images/3.png"></li>
+					<li class="reel"><img src="images/4.png"></li>
+					<li class="reel"><img src="images/5.png"></li>
+					<li class="reel"><img src="images/6.png"></li>
+					<li class="reel"><img src="images/7.png"></li>
+					<li class="reel"><img src="images/8.png"></li>
+          <li class="reel"><img src="images/9.png"></li>
+          <li class="reel"><img src="images/0.png"></li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<button type="button" class="btn-stop" data-val="0" disabled="true"><span>STOP</span></button>
+			<button type="button" class="btn-stop" data-val="1" disabled="true"><span>STOP</span></button>
+			<button type="button" class="btn-stop" data-val="2" disabled="true"><span>STOP</span></button>
+		</div>
+    <div>
+			<button type="button" class="btn-start"><span>start</span></button>
+			<button type="button" class="btn-reset" disabled="true"><span>reset</span></button>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			(function (global) {
+				"use strict";
+
+				/*
+				 * スロットのリール回転速度(実行毎秒数)
+				 */
+				var sec = 100;
+
+				/*
+				 * スロットのリール情報
+				 * ・スロットのリールelement
+				 * ・スロットのリール停止フラグ
+				 * ・スロットのリール回転数
+				 */
+				var $reels       = [],
+					stopReelFlag = [],
+					reelCounts   = [];
+
+				/*
+				 * 位置情報
+				 */
+				var slotFrameHeight     = 0,
+					slotReelsHeight     = 0,
+					slotReelItemHeight  = 0,
+					slotReelStart       = 0,
+					slotReelStartHeight = 0;
+
+				/**
+				 * スロット
+				 */
+				var Slot = {
+					/**
+					 * 初期化処理
+					 */
+					init: function init() {
+						$reels[0] = $reels[1] = $reels[2] = null;
+						stopReelFlag[0] = stopReelFlag[1] = stopReelFlag[2] = false;
+						reelCounts[0] = reelCounts[1] = reelCounts[2] = 0;
+					},
+					/**
+					 * スタートボタンのクリックイベント
+					 */
+					start: function () {
+						for (var index = 0; index<3; index++) {
+							Slot.animation(index);
+						}
+					},
+					/**
+					 * ストップボタンのクリックイベント
+					 */
+					stop: function (index) {
+						stopReelFlag[index] = true;
+						if (stopReelFlag[0] && stopReelFlag[1] && stopReelFlag[2]) {
+							// 全リール停止したらリセットボタンを押下できるようにする
+							$('.btn-reset').attr('disabled', false);
+						}
+					},
+					/**
+					 * 位置情報の初期化処理
+					 */
+					resetLocationInfo: function () {
+						slotFrameHeight    = $('.slot-frame').outerHeight();
+						slotReelsHeight    = $('.reels').eq(0).outerHeight();
+						slotReelItemHeight = $('.reel').eq(0).outerHeight();
+						slotReelStart      = 5 - 2;
+						// リールの上下は、半分だけ表示させるための位置調整
+						slotReelStartHeight = -slotReelsHeight;
+						slotReelStartHeight = slotReelStartHeight + slotFrameHeight + ((slotReelItemHeight * 3 / 2) - (slotFrameHeight / 2));
+
+						$('.reels').css({
+							'top':slotReelStartHeight
+						});
+					},
+					/**
+					 * スロットの回転アニメーション
+					 */
+					animation: function (index) {
+						console.log('アニメーション', '開始', index);
+						if (reelCounts[index] >= 5) {
+							reelCounts[index] = 0;
+						}
+
+						console.log('slotReelStartHeight', slotReelStartHeight);
+						console.log('reelCounts[index]', reelCounts[index]);
+						console.log('slotReelsHeight', slotReelsHeight);
+						console.log('top', slotReelStartHeight + (reelCounts[index] * slotReelItemHeight));
+
+						$('.reels').eq(index).animate({
+							'top': slotReelStartHeight + (reelCounts[index] * slotReelItemHeight)
+						}, {
+							duration: sec,
+							easing: 'linear',
+							complete: function () {
+								console.log('アニメーション', '完了', index, reelCounts[index]);
+								if (stopReelFlag[index]) {
+									console.log('アニメーション', 'ストップ', index, reelCounts[index]);
+									return ;
+								}
+								// 移動階数をカウント
+								reelCounts[index]++;
+								// スロット回転のアニメーションを実行する
+								Slot.animation(index);
+							}
+						});
+					},
+				};
+
+				global.Slot = Slot;
+
+			})((this || 0).self || global);
+
+			/**
+			 * 読み込み後
+			 */
+			$(document).ready(function () {
+
+				/*
+				 * スロットの初期化処理を実行
+				 */
+				Slot.init();
+				Slot.resetLocationInfo();
+
+				/**
+				 * スタートボタンのクリックイベント
+				 */
+				$('.btn-start').click(function () {
+					// スタートボタンを押せないようにする
+					$(this).attr('disabled', true);
+					// スロットの回転を開始
+					Slot.start();
+					// ストップボタンを押せるようにする
+					$('.btn-stop').attr('disabled', false);
+				});
+
+				/**
+				 * リセットボタンのクリックイベント
+				 */
+				$('.btn-reset').click(function () {
+					// リセットボタンを押せないようにする
+					$(this).attr('disabled', true);
+					// スタートボタンを押せるようにする
+					$('.btn-start').attr('disabled', false);
+					// ストップボタンを押せないようにする
+					$('.btn-stop').attr('disabled', true);
+					// スロットのリール情報を初期化
+					Slot.init();
+				});
+
+				/**
+				 * ストップボタンのクリックイベント
+				 */
+				$('.btn-stop').click(function () {
+					// ストップボタンを押せないようにする
+					$(this).attr('disabled', true);
+					// レールの回転を停止
+					Slot.stop($(this).attr('data-val'));
+				});
+
+			});
+		</script>
+	</body>
+</html>
